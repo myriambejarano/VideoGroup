@@ -1,0 +1,66 @@
+PROYECTO VIDEoclub - JAVA
+
+Autor: Marco, Myriam, David
+
+
+
+
+DESCRIPCIÓN:
+Este proyecto consiste en el desarrollo de un sistema de gestión de un videoclub en Java. Permite gestionar usuarios, películas, reservas y listas de espera.
+
+---
+
+FUNCIONALIDADES:
+
+* Alta de usuarios
+* Alta de películas
+* Reserva / alquiler de películas
+* Devolución de películas
+* Lista de espera para películas no disponibles
+* Control del estado de las películas mediante enum:
+  1 = STOCK
+  2 = RESERVADA
+  3 = ALQUILADA
+* Detección de usuarios con retraso en la devolución
+
+---
+
+ESTRUCTURA DEL PROYECTO:
+
+Clases principales:
+
+* Usuario.java → Gestiona la información de los usuarios
+* Pelicula.java → Representa cada película
+* Reserva.java → Controla las reservas y fechas
+* Videoclub.java → Lógica principal del sistema
+* EstadoPelicula.java → Enum con los estados
+* Main.java → Punto de entrada del programa
+
+---
+
+CÓMO EJECUTAR:
+
+1. Compilar el proyecto:
+   javac *.java
+
+2. Ejecutar:
+   java Main
+
+---
+
+NOTAS:
+
+* Las películas pueden tener una lista de espera (cola FIFO)
+* Los usuarios pueden tener varias películas alquiladas
+* Se controla si un usuario tiene retraso comparando fechas
+
+---
+
+POSIBLES MEJORAS:
+
+* Añadir interfaz gráfica
+* Implementar base de datos
+* Añadir sistema de multas
+* Búsqueda avanzada de películas
+
+---
